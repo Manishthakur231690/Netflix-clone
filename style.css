@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.page-one{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.750) ,rgba(0, 0, 0, 0.550)),url("/Images/netflixteaser.png");
+    background-size: cover;
+    background-position: center;
+}
+.page-one .header{
+      padding: 25px 3%;
+      display: flex;
+      flex-direction: row;
+}
+.page-one .header .item{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.page-one .header .item select{
+    height: 40px;
+    color: aliceblue;
+    border: 1px solid rgb(214, 214, 214);
+    background-color: transparent;
+    padding: 6px 10px;
+    font-size: 16px;
+    border-radius: 3px;
+}
+.page-one .header .item option{
+    color: black;
+}
+.page-one .header .item a{
+    height: 40px;
+    text-decoration: none;
+    background-color: rgb(211, 9, 9);
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    color: white;
+    padding: 9px 10px;
+    margin-left: 2%;
+}
+.content-one{
+    width: 100%;
+    text-align: center;
+    margin-top: 20vh;
+    color: white;
+    padding: 0 2vw;
+}
+.content-one h1{
+    font-size: 65px;
+    line-height: 70px;
+}
+#third_line{
+font-size: 20px; letter-spacing: 1px; margin-top: 20px;
+}
+.content-one h2{
+    font-size: 30px;
+    font-weight: lighter;
+     letter-spacing: 0.7x;
+     margin-top: 10px;
+}
+.content-one .form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.content-one .form input[type="email"]{
+    background-color: aliceblue;
+    border: none;
+    padding: 20px 30px 20px 10px;
+    font-size: 18px;
+    width: 35%;
+    margin-top: 2%;
+    border-radius: 3px;
+}
+.content-one .form #get_start{
+    background-color: rgb(211, 9, 9);
+    border: none;
+    font-size: 2vw;
+    width: 12%;
+    margin-top: 2%;
+    color: aliceblue;
+    padding: 20px 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.content-one .form #get_start:hover{
+    background-color: rgb(245, 43, 43);
+}
+/****************************************************************************************************************************************
+                                   RESPONSIVE ( Media Query.)
+**************************************************************************************************************************************/
+
+@media screen and (max-width:550px){
+    .page-one{
+        height: 150vh;
+    }
+    .content-one .form{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .content-one .form input[type="email"]{
+        padding: 20px 30px 20px 5px;
+        font-size: 18px;
+        width: 80%;
+        margin-top: 2%;
+        border-radius: 3px;
+        margin-left: 10%;
+    }
+    #third_line{
+        font-size: 16px; margin-top: 20px;
+    }
+    .content-one .form #get_start{
+        font-size: 20px;
+        width: 35%;
+        margin-left: 30%;
+        padding: 10px 5px;
+    }
+    .content-one{
+        margin-top: 10vh;
+    }
+    .content-one h1{
+        font-size: 40px;
+        line-height: 60px;
+    }
+}
+@media screen and (max-width:500px){
+    .page-one{
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(to bottom,rgba(0, 0, 0, 0.750) ,rgba(0, 0, 0, 0.550)),url("netflixteaser.png");
+        background-size: cover;
+        background-position: center;
+    }
+    .content-one .form input[type="email"]{
+        margin-top: 40px;
+    }
+    .content-one h1{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .content-one h2{
+        font-size: 20px;
+    }
+    .content-one .form #get_start{
+        border-radius: 5px;
+        letter-spacing: 0.5px;
+        padding: 10px;
+        width: 40%;
+        margin-top: 10px;
+    }
+}
+
+/*****************************************************    PAGE_ TWO  ********************************************************************/
+
+.container-one{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5vw 10vw;
+    color: white;
+}
+.container-one h1{
+    font-size: 3.7vw;
+    letter-spacing: 1.5px;
+}
+.container-one p{
+    font-size: 1.6vw;
+    font-weight: lighter; 
+    letter-spacing: 0.7x;
+    letter-spacing: 1.2px;
+    line-height: 2.3vw;
+    margin-top: 15px;
+ }
+.container-one .text{
+    padding-top: 50px;
+ }
+.container-one .image img{
+    height: 20vw;
+}
+/**********************************************       MEDIA QUERY    ******************************************************************/
+
+@media screen and (max-width:800px){
+    .container-one{
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        padding: 5vw 10vw;
+        color: white;
+    }
+    .container-one .image img{
+        height: 50vw;
+        margin-top: 20px;
+    }
+    .container-one h1{
+        font-size: 7vw;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .container-one p{
+        text-align: center;
+        font-size: 12px;
+        font-weight: lighter; 
+        line-height: 4.2vw;
+        letter-spacing: 0.5px;
+        margin-top: 15px;
+     }
+}
+
+/***********************************************     LAST_PAGE     *****************************************************************/
+
+
+.page-last{
+    background-color: black;
+    padding: 2vw 15vw;
+}
+.page-last h1{
+    font-size: 45px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.page-last p{
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(51, 51, 51);
+    font-size: 27px;
+    color: white;
+    margin-top: 10px;
+}
+.page-last  span{
+    float: right;
+    font-size: 30px;
+}
+
+@media screen and (max-width:580px){
+    .page-last{
+        background-color: black;
+        padding: 2vw 5vw;
+    }
+    .page-last p{
+        font-size: 20px;
+    }
+    .page-last h1{
+        font-size: 30px;
+    }
+}
+
+ #form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+    padding-bottom: 30px;
+}
+#form input[type="email"]{
+    background-color: aliceblue;
+    border: none;
+    padding: 20px 30px 20px 10px;
+    font-size: 18px;
+    width: 35%;
+    margin-top: 2%;
+    border-radius: 3px;
+}
+  #form input[type="button"]{
+    background-color: rgb(211, 9, 9);
+    border: none;
+    font-size: 2vw;
+    width: 12%;
+    margin-top: 2%;
+    color: aliceblue;
+    padding: 20px 5px;
+    cursor: pointer;
+}
+  #form input[type="button"]:hover{
+    background-color: rgb(245, 43, 43);
+}
+/****************************************************************************************************************************************
+                                   RESPONSIVE ( Media Query#)
+**************************************************************************************************************************************/
+
+@media screen and (max-width:550px){
+      #form{
+        flex-direction: column;
+        justify-content: center;
+    }
+      #form input[type="email"]{
+        padding: 20px 30px 20px 5px;
+        font-size: 18px;
+        width: 80%;
+        margin-top: 2%;
+        border-radius: 3px;
+        margin-left: 10%;
+    }
+      #form input[type="button"]{
+        font-size: 20px;
+        width: 35%;
+        margin-left: 30%;
+        padding: 10px 5px;
+    }
+}
+@media screen and (max-width:500px){
+      #form input[type="email"]{
+        margin-top: 40px;
+    }
+}
+
+
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    padding: 5vw 10vw;
+    justify-content: space-evenly;
+    background-color: black;
+}
+ .footer .item{
+    color: rgb(189, 189, 189);
+    line-height: 35px;
+}
+
+@media screen and (max-width:550px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer .item{
+        border-top: 1px solid rgb(62, 62, 62);
+        margin-top: 10px;
+    }
+}
+

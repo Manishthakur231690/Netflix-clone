@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!---------------   Font Awesome  &   CSS ------------------------------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="second-page.css"> 
+    <!---------------   Google Fonts   ------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Diplomata+SC&family=Henny+Penny&family=Lobster&family=Lobster+Two:ital@1&family=Patrick+Hand&family=Patua+One&family=Poppins&family=Roboto&family=Roboto+Mono:wght@100&family=Roboto+Slab:wght@400&family=Rubik&family=Rubik+Moonrocks&family=Signika+Negative:wght@400&family=Slabo+27px&family=Sriracha&family=Staatliches&family=Tiro+Kannada&family=Ubuntu:wght@400&family=Xanh+Mono&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+<div class="home-page">
+    <header>
+        <a href="index.html"><img src="/Images/netflix-logo-png-2564.png" alt="netflix-logo" height="50px" width="150px"></a>
+    <div style="display: flex;align-items: center;">
+    </div>
+    </header>
+    <div class="home-page_content" data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-sine">
+        <h2>Stranger Things</h2>
+        <button id="play"><i class="fa-solid fa-play"></i> Play</button>
+        <button id="info"><i class="fa-solid fa-circle-info"></i> More Info</button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicin inventore velit, incidunt accusantium voluptatem dicta laboriosam culpa tempora praesentium neque quisquam nobis facilis hic vel id laborum.....</p>
+    </div>
+
+<div class="your_collection">
+    <h1 id="netflix-orig">Netflix Original</h1> 
+    <button id="view_favorite">Favourite <i class="fa-solid fa-bookmark" style="margin-left: 10px;"></i></button>
+</div>
+
+</div>
+
+
+<div class="page-two" id="page-two">
+
+    <div id="show">
+        <img src="/Images/show1.jpg" id="show_img">
+        <button id="watch">Watch <i class="fa-solid fa-play"></i></button>
+        <button id="favourite" onclick="add_fav(1,'/Images/show1.jpg')"><i class="fa-regular fa-bookmark" ></i></button>
+    </div>
+    <div id="show"   >
+        <img src="/Images/show2.jpg" id="show_img">
+        <button id="watch">Watch <i class="fa-solid fa-play"></i></button>
+        <button id="favourite" onclick="add_fav(2,'/Images/show2.jpg')"> <i class="fa-regular fa-bookmark" ></i></button>
+    </div>
+    <div id="show"   >
+        <img src="/Images/show3.jpg" id="show_img">
+        <button id="watch">Watch <i class="fa-solid fa-play"></i></button>
+        <button id="favourite" onclick="add_fav(3,'/Images/show3.jpg')"> <i class="fa-regular fa-bookmark" ></i></button>
+    </div>
+    <div id="show"   >
+        <img src="/Images/show4.jpg" id="show_img">
+        <button id="watch">Watch <i class="fa-solid fa-play"></i></button>
+        <button id="favourite" onclick="add_fav(4,'/Images/show4.jpg')"> <i class="fa-regular fa-bookmark" ></i></button>
+    </div>
+    <div id="show"   >
+        <img src="/Images/show5.jpg" id="show_img">
+        <button id="watch">Watch <i class="fa-solid fa-play"></i></button>
+        <button id="favourite" onclick="add_fav(5,'/Images/show5.jpg')"> <i class="fa-regular fa-bookmark" ></i></button>
+    </div>
+    <div id="show"    data-aos-easing="ease-in-sine">
+        <img src="/Images/show6.jpg" id="show_img">
+        <button id="watch">Watch <i class="fa-solid fa-play"></i></button>
+        <button id="favourite" onclick="add_fav(6,'/Images/show6.jpg')"> <i class="fa-regular fa-bookmark" ></i></button>
+    </div>
+    <div id="show"    data-aos-easing="ease-in-sine">
+        <img src="/Images/show7.jpg" id="show_img">
+        <button id="watch">Watch <i class="fa-solid fa-play"></i></button>
+        <button id="favourite" onclick="add_fav(7,'/Images/show7.jpg')"> <i class="fa-regular fa-bookmark" ></i></button>
+    </div>
+    <div id="show"    data-aos-easing="ease-in-sine">
+        <img src="/Images/show8.jpeg" id="show_img">
+        <button id="watch">Watch <i class="fa-solid fa-play"></i></button>
+        <button id="favourite" onclick="add_fav(8,'/Images/show8.jpeg')"> <i class="fa-regular fa-bookmark" ></i></button>
+    </div>
+    <div id="show"   >
+        <img src="/Images/show9.jpg" id="show_img">
+        <button id="watch">Watch <i class="fa-solid fa-play"></i></button>
+        <button id="favourite" onclick="add_fav(9,'/Images/show9.jpg')"> <i class="fa-regular fa-bookmark" ></i></button>
+    </div>
+    <div id="show"   >
+        <img src="/Images/show10.jpg" id="show_img">
+        <button id="watch">Watch <i class="fa-solid fa-play"></i></button>
+        <button id="favourite" onclick="add_fav(10,'/Images/show10.jpg')"> <i class="fa-regular fa-bookmark" ></i></button>
+    </div>
+    <div id="show"   >
+        <img src="/Images/show11.jpg" id="show_img">
+        <button id="watch">Watch <i class="fa-solid fa-play"></i></button>
+        <button id="favourite" onclick="add_fav(11,'/Images/show11.jpg')"> <i class="fa-regular fa-bookmark" ></i></button>
+    </div>
+    <div id="show"   >
+        <img src="/Images/show12.jpg" id="show_img">
+        <button id="watch">Watch <i class="fa-solid fa-play"></i></button>
+        <button id="favourite" onclick="add_fav(12,'/Images/show12.jpg')"> <i class="fa-regular fa-bookmark" ></i></button>
+    </div>
+    <div id="show"   >
+        <img src="/Images/show13.jpg" id="show_img">
+        <button id="watch">Watch <i class="fa-solid fa-play"></i></button>
+        <button id="favourite" onclick="add_fav(13,'/Images/show13.jpg')"> <i class="fa-regular fa-bookmark" ></i></button>
+    </div>
+    <div id="show"   >
+        <img src="/Images/show14.jpeg" id="show_img">
+        <button id="watch">Watch <i class="fa-solid fa-play"></i></button>
+        <button id="favourite" onclick="add_fav(14,'/Images/show14.jpeg')"> <i class="fa-regular fa-bookmark" ></i></button>
+    </div>
+    <div id="show"   >
+        <img src="/Images/show15.jpeg" id="show_img">
+        <button id="watch">Watch <i class="fa-solid fa-play"></i></button>
+        <button id="favourite" onclick="add_fav(15,'/Images/show15.jpeg')"> <i class="fa-regular fa-bookmark" ></i></button>
+    </div> 
+
+
+
+</div>
+
+<div id="fav_container" data-aos="fade-left" data-aos-offset="400" data-aos-easing="ease-in-sine">
+    <div style="display: flex;align-items: center;justify-content: space-between;">
+        <h1>Your Favourite Shows</h1><i class="fa-solid fa-xmark" id="close"></i>
+    </div>  
+
+    <div class="shows-container">
+        <div id="fav_item"></div>
+    </div>
+
+</div>
+
+
+
+<div style="height: 6px;width: 100vw;background-color: rgba(10, 10, 10, 0.893);"></div>
+
+<div class="footer">
+    <div class="item"><p>FAQ <br>Investor Relation <br>Privacy <br>Speed Test</p></div>
+
+    <div class="item"><p>Help Center <br>Jobs <br>Preference <br>Legal Notices</p></div>
+
+    <div class="item"><p>Account <br>Way To Watch <br>Information <br>Only on Netflix</p></div>
+
+    <div class="item"><p>Media Center <br>Terms of Use<br>Contact Us</p></div>
+</div>
+
+
+
+<script src="app.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</body>
+</html>
